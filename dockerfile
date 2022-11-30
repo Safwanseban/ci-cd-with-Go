@@ -9,6 +9,7 @@ WORKDIR /root
 FROM alpine:latest
 
 COPY --from=builder /ci-cd-pipelines-go/main .
+
 COPY . .
 CMD ["./main"]
 
