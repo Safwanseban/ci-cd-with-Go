@@ -1,0 +1,12 @@
+name: welcome to the repository
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: welcome greeting
+      run: echo "hi welcome to this repository"
