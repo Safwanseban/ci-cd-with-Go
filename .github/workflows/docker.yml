@@ -19,7 +19,7 @@ jobs:
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s) 
 
     - name: Publishiing docker image
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
           name: safwanseban/go-github-actions
           username: ${{ secrets.DOCKER_USERNAME }}
